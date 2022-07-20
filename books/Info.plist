@@ -23,6 +23,16 @@
 	</dict>
     <key>NSAppTransportSecurity</key>
     <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>google.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+            </dict>
+        </dict>
         <key>NSAllowsLocalNetworking</key>
         <true/>
         <key>NSAllowsArbitraryLoads</key>
